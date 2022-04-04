@@ -10,13 +10,14 @@ public class Ex4AreaRetangulo {
         System.out.println("Digite o valor da altura do retângulo:");
         int altura = leitor.nextInt();
 
-        int area = base*altura;
-
-        areaRetangulo(area);
+        areaRetangulo(base, altura);
     }
 
-    public static void areaRetangulo(int area){
+    public static int areaRetangulo(int base, int altura){
+        int area = base*altura;
         System.out.println("A área do retangulo é: "+area);
+
+        return area;
 
     }
 }
